@@ -1,0 +1,43 @@
+#:kivy 2.0.0
+<LoginScreen@Screen>:
+    name: "Login"
+
+    BackgroundLayer:
+
+
+
+
+<BackgroundLayer@BoxLayout>:
+    orientation: "vertical"
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: utils.get_color_from_hex("#424bf5")
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [0, 0, 40, 40]
+
+
+    BoxLayout:
+        orientation: "horizontal"
+        padding: [50, 0, 0, 0]
+        widget:
+            canvas.before:
+                color:
+                    rgba: utils.get_color_from_hex("#6ff542")
+                Ellipse:
+                    pos: self.pos
+        widget:
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#f5ef42")
+                Ellipse:
+                    pos:self.pos
+        widget:
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#cf3934")
+                Ellipse:
+                    pos:self.pos
